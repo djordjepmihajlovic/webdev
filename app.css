@@ -202,7 +202,22 @@ div {
 }
 
 .photo-container img:hover{
-    transform: scale(1.2) translateY(-10px);
+    opacity: 0.3;
+}
+
+.photo-container .image-text {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+    transition: 0.2s;
+    color: #FFFF;
+    text-align: center;
+}
+
+.photo-container:hover .image-text {
+    opacity: 1;
 }
 
 
