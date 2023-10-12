@@ -104,7 +104,8 @@ div {
 }
 
 .pdf-section {
-    margin-top: auto;
+    /* margin-top: auto; */
+    /* margin-bottom: -10px; */
     /* height: 50%; */
     /* /* /* text-align: center; */
     /* overflow-y: 50%; */
@@ -112,7 +113,7 @@ div {
 }
 
 .large-br {
-    margin-top: 10px;
+    margin-top: 25%;
     margin-bottom: 25%;
 }
 
