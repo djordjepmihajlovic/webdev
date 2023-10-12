@@ -22,13 +22,14 @@ body{
     }
 
     body::before {
-        content: "Site under development for mobile. Please visit it on a desktop!";
+        content: "Site under development for mobile. Please visit on desktop!";
         display: block;
         text-align: center;
         padding: 20px;
         background-color: #ff9999;
         color: #333;
         font-size: 18px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 }
 
