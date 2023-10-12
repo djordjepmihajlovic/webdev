@@ -1,7 +1,7 @@
 
 body{
     background-color: #020e1d;
-    height: 100vh; /* takes up full screen */
+    height: 100%; /* takes up full screen */
     display: flex;
     flex-direction: column;
 }
@@ -113,7 +113,7 @@ div {
 }
 
 .large-br {
-    height: 50%;
+    margin-top: 50%;
 }
 
 .med-br {
