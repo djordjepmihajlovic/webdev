@@ -102,3 +102,49 @@ div {
     text-align: center;
     padding: 20px;
 }
+
+.pdf-section {
+    margin-top: auto;
+    /* height: 50%; */
+    /* /* /* text-align: center; */
+    /* overflow-y: 50%; */
+    padding: 20px;
+}
+
+.large-br {
+    margin-top: 10px;
+    margin-bottom: 25%;
+}
+
+.med-br {
+    margin-top: 10%;
+}
+
+.small-br {
+    margin-top: 5%
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+/* Style for individual photo container */
+.photo-container {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for images within the container */
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+
+.photo-container img:hover{
+    transform: scale(1.2) translateY(-10px);
+}
+
+
