@@ -1,7 +1,7 @@
 
 body{
     background-color: #020e1d;
-    height: 100%; /* takes up full screen */
+    height: 100%; /*takes up full screen */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@ body{
 h1 {
     text-align: center;
     color : #bbd1ea;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -82,8 +82,8 @@ p {
 }
 
 .image-cropper {
-    height: 200px;
-    width: 200px;
+    /* height: 200px;
+    width: 200px; */
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -130,6 +130,10 @@ div {
     text-align: center;
 }
 
+.section-container {
+    height: 120%;
+}
+
 
 .image-container {
     display: flex;
@@ -167,11 +171,16 @@ div {
     /* height: 50%; */
     /* /* /* text-align: center; */
     /* overflow-y: 50%; */
-    padding: 20px;
+    /* padding: 20px;
+    filter: drop-shadow(20px 20px 10px black); */
+    /* padding-left: 100%;
+    padding-right: 100%; */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .large-br {
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
 .med-br {
@@ -186,6 +195,7 @@ div {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 10px;
+    padding-top: 20px;
 }
 
 /* Style for individual photo container */
@@ -219,6 +229,68 @@ div {
 .photo-container:hover .image-text {
     opacity: 1;
 }
+
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 1px;
+    padding: 10px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #scrollButton2 {
+    /* display: none; */
+    position: fixed;
+    bottom: 120px;
+    right: 15px;
+    padding: 10px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #scrollButton3 {
+    /* display: none; */
+    position: fixed;
+    bottom: 210px;
+    right: 5px;
+    padding: 10px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  #scrollButton4 {
+    /* display: none; */
+    position: fixed;
+    bottom: 320px;
+    right: 5px;
+    padding: 10px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  #scrollButton5 {
+    /* display: none; */
+    position: fixed;
+    bottom: 500px;
+    right: 5px;
+    padding: 10px;
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
 
 
 
