@@ -243,7 +243,7 @@ div {
   }
 
   #scrollButton2 {
-    /* display: none; */
+    display: none;
     position: fixed;
     bottom: 120px;
     right: 15px;
@@ -255,7 +255,7 @@ div {
   }
 
   #scrollButton3 {
-    /* display: none; */
+    display: none;
     position: fixed;
     bottom: 210px;
     right: 5px;
@@ -268,7 +268,7 @@ div {
 
 
   #scrollButton4 {
-    /* display: none; */
+    display: none;
     position: fixed;
     bottom: 320px;
     right: 5px;
@@ -281,7 +281,7 @@ div {
 
 
   #scrollButton5 {
-    /* display: none; */
+    display: none;
     position: fixed;
     bottom: 500px;
     right: 5px;
