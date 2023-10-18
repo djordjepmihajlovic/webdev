@@ -4,7 +4,7 @@ body{
     height: 100%; /*takes up full screen */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
 }
 
@@ -78,7 +78,10 @@ h2 {
 
 p {
     text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
     color : #bbd1ea;
+    font-size: large;
 }
 
 .image-cropper {
@@ -292,5 +295,42 @@ div {
     cursor: pointer;
   }
 
-
-
+  #proj-section {
+    display: flex;
+    align-items: left;    
+    margin: 20px;
+  }
+  
+  #project-info {
+    flex: 1;
+    /* padding: 20px; */
+    margin-right: 20px;
+    /* box-sizing: border-box;
+    text-align: left;
+    background-color: #00FF00; */
+  }
+  
+  #image-container-proj {
+    flex: 1;
+  }
+  
+  #current-image-proj {
+    max-width: 100%
+  }
+  
+  #projbutton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #prev-btn-proj {
+    left: 10px;
+  }
+  
+  #next-btn-proj {
+    right: 10px;
+  }

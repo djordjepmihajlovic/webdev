@@ -39,7 +39,7 @@
     <div class="image-container">
 
         <figure>
-            <button class="standard-button">
+            <button onclick="scrollToSection('projects')" class="standard-button" id="projectsButton">
             <img src="img/nicepc.png" alt="pc icon" height="100px"/>
             <figcaption>PROJECTS</figcaption>
             </button>
@@ -72,6 +72,12 @@
     <br>
 
     </div>
+    <p class="small-br"></p>
+
+    <p>Currently a 5th year theoretical physics candidate at the University of Edinburgh. 
+        My main area of interest is in applying mathematical and computational techniques to solve problems in physics, currently focused on implementing machine learning methods 
+        to learn more about physical systems.
+    </p>
 
 <p class="large-br"></p>
 
@@ -112,84 +118,88 @@
         <img src="pdf/cv_october.jpeg" alt="C.V." />
     </div> -->
 
+<p class ="small-br"></p>
+
+    <div class="proj-section" id="projects">
+        <h1>PROJECTS</h1>
+
+        <div id="project-info">
+            <h2 id="project-title"></h2>
+            <p id="project-description"></p>
+          </div>
+          <div id="image-container-proj">
+            <img src="" alt="Project Image" id="current-image" width="250px">
+            <button class = "projbutton" id="prev-btn-proj">Previous</button>
+            <button class = "projbutton" id="next-btn-proj">Next</button>
+          </div>
+
+    </div>
+
+
+
 <p class="small-br"></p>
 
-<div class="photo-grid" id="photog">
-    <div class="photo-container">
-        <img src="photography/Lions Nat Park.JPG" alt="Lions in Nairobi Nat.">
-        <div class="image-text">Lions, Nairobi, Kenya</div>
-    </div>
-    <div class="photo-container">
-        <img src="photography/Pagodas Hsipaw.JPG" alt="Pagodas in Hsipaw">
-        <div class="image-text">Pagodas, Hsipaw, Myanmar</div>
-    </div>
-    <div class="photo-container">
-        <img src="photography/Yak Kharka Nepal.jpg" alt="Yak Kharka Nepal">
-        <div class="image-text">Annapurna II, Yak Kharka, Nepal</div>
-    </div>
-    <div class="photo-container">
-        <img src="photography/Wildebeest Nat Park.jpg" alt="Wildebeest in Nairobi Nat.">
-        <div class="image-text">Wildebeest, Nairobi, Kenya</div>
-    </div>
-    <div class="photo-container">
-        <img src="photography/Pagodas Hsipaw v2.JPG" alt="Pagodas in Hsipaw">
-        <div class="image-text">Pagodas, Hsipaw, Myanmar</div>
-    </div>
-    <div class="photo-container">
-        <img src="photography/Yak Kharka v2 Nepal.jpeg" alt="Yak Kharka Nepal">
-        <div class="image-text">Annapurna II, Yak Kharka, Nepal</div>
-    </div>
-    <div class="photo-container">
-        <img src="photography/Caltonb.jpg" alt="Calton Hill Edinburgh">
-        <div class="image-text">Calton Hill, Edinburgh</div>
-    </div>
-    <div class="photo-container">
-        <img src="photography/giraffe.JPG" alt="Giraffes Nairobi">
-        <div class="image-text">Giraffes, Nairobi, Kenya</div>
-    </div>
-    </div>
+    <h1>PHOTOGRAPHY</h1>
 
-
-    <!-- <div class="photo-container">
-        <img src="photography/Yak Kharka Nepal.jpg" alt="Yak Kharka Nepal">
-    </div>
-    <div class="photo-container">
-        <img src="photography/Wildebeest Nat Park.jpg" alt="Wildebeest in Nairobi Nat.">
-    </div>
-    <div class="photo-container">
-        <img src="photography/Pagodas Hsipaw v2.JPG" alt="Pagodas in Hsipaw">
-    </div>
-    <div class="photo-container">
-        <img src="photography/Yak Kharka v2 Nepal.jpeg" alt="Yak Kharka Nepal"> -->
-
-    <!-- </div> -->
-    <!-- Add more photo containers as needed -->
-    <!-- </div> -->
+        <div class="photo-grid" id="photog">
+            <div class="photo-container">
+                <img src="photography/Lions Nat Park.JPG" alt="Lions in Nairobi Nat.">
+                <div class="image-text">Lions, Nairobi, Kenya</div>
+            </div>
+            <div class="photo-container">
+                <img src="photography/Pagodas Hsipaw.JPG" alt="Pagodas in Hsipaw">
+                <div class="image-text">Pagodas, Hsipaw, Myanmar</div>
+            </div>
+            <div class="photo-container">
+                <img src="photography/Yak Kharka Nepal.jpg" alt="Yak Kharka Nepal">
+                <div class="image-text">Annapurna II, Yak Kharka, Nepal</div>
+            </div>
+            <div class="photo-container">
+                <img src="photography/Wildebeest Nat Park.jpg" alt="Wildebeest in Nairobi Nat.">
+                <div class="image-text">Wildebeest, Nairobi, Kenya</div>
+            </div>
+            <div class="photo-container">
+                <img src="photography/Pagodas Hsipaw v2.JPG" alt="Pagodas in Hsipaw">
+                <div class="image-text">Pagodas, Hsipaw, Myanmar</div>
+            </div>
+            <div class="photo-container">
+                <img src="photography/Yak Kharka v2 Nepal.jpeg" alt="Yak Kharka Nepal">
+                <div class="image-text">Annapurna II, Yak Kharka, Nepal</div>
+            </div>
+            <div class="photo-container">
+                <img src="photography/Caltonb.jpg" alt="Calton Hill Edinburgh">
+                <div class="image-text">Calton Hill, Edinburgh</div>
+            </div>
+            <div class="photo-container">
+                <img src="photography/giraffe.JPG" alt="Giraffes Nairobi">
+                <div class="image-text">Giraffes, Nairobi, Kenya</div>
+            </div>
+            </div>
 
 
 
-    <div class="contact-section">
+<div class="contact-section">
 
-        <h2>Contact</h2>
-        <p>
-            <a href="https://www.github.com/djordjepmihajlovic" target=_self>
-                <button class="custom-button">GitHub</button>
-            </a>
+    <h2>Contact</h2>
+    <p>
+        <a href="https://www.github.com/djordjepmihajlovic" target=_self>
+            <button class="custom-button">GitHub</button>
+        </a>
 
-            <a href="https://www.linkedin.com/in/djordjemihajlovic00" target=_self>
-                <button class="custom-button">LinkedIn</button>
-            </a>    
+        <a href="https://www.linkedin.com/in/djordjemihajlovic00" target=_self>
+            <button class="custom-button">LinkedIn</button>
+        </a>    
 
-            <a href="mailto:djdjdjordje@gmail.com" target=_self>
-                <button class="custom-button">Email</button>
-            </a>
+        <a href="mailto:djdjdjordje@gmail.com" target=_self>
+            <button class="custom-button">Email</button>
+        </a>
 
-            <a href="https://twitter.com/doyoudydx" target=_self>
-                <button class="custom-button">X/Twitter</button>
-            </a>
-        </p>
+        <a href="https://twitter.com/doyoudydx" target=_self>
+            <button class="custom-button">X/Twitter</button>
+        </a>
+    </p>
 
-    </div>
+</div>
 
 
 
