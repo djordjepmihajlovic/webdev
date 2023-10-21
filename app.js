@@ -56,11 +56,11 @@ const projects = [
     description: "From a research internship at the University of Edinburgh's Institute for Condensed Matter and Complex Systems(ICMCS). My work involved further development of code written in C++ to simulate the behaviour of smectic liquid crystals relaxing according to a free energy. Below is a still from the simulation code I was working on which is originally creditted to Dr. Shendruck and Dr. Paget [cite].",
     images: ["img/Screenshot 2023-08-10 at 12.35.38.png"]
   },
-  {
-    title: "Spot-a-Knot",
-    description: "An IOS app designed to show the difficulty in identifying knots and to stress the importance of the search for a universal knot invariant.",
-    images: ["img/Picture 1.png"]
-  },
+  // {
+  //   title: "Spot-a-Knot",
+  //   description: "An IOS app designed to show the difficulty in identifying knots and to stress the importance of the search for a universal knot invariant.",
+  //   images: ["img/Picture 1.png"]
+  // },
   // Add more projects as needed
 ];
 
