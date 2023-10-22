@@ -115,3 +115,4 @@ nextButton.addEventListener("click", showNextImage);
 prevButton.addEventListener("click", showPrevImage);
 nextButton.addEventListener("click", showNextProject);
 prevButton.addEventListener("click", showPrevProject);
+

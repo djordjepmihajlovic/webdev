@@ -78,8 +78,8 @@ h2 {
 
 p {
     text-align: center;
-    margin-right: 10%;
-    margin-left: 10%;
+    /* margin-right: 10%;
+    margin-left: 10%; */
     color : #bbd1ea;
     font-size: large;
 }
@@ -165,19 +165,10 @@ div {
     margin-top:auto ; /* Pushes the contact section to the bottom */
     margin-bottom: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .pdf-section {
-    /* margin-top: auto; */
-    /* margin-bottom: -10px; */
-    /* height: 50%; */
-    /* /* /* text-align: center; */
-    /* overflow-y: 50%; */
-    /* padding: 20px;
-    filter: drop-shadow(20px 20px 10px black); */
-    /* padding-left: 100%;
-    padding-right: 100%; */
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -334,3 +325,95 @@ div {
   #next-btn-proj {
     right: 10px;
   }
+
+
+  .anim {
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+    /* margin-left: 50%;
+    margin-right: 50%; */
+  }
+
+
+ @keyframes cursor {
+    50% {border-color: transparent}
+ }
+
+ @keyframes cursor2 {
+    50% {border-color: transparent}
+ }
+
+ /* @keyframes typing{
+    from {width: 0}
+ } */
+
+ @keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+    /* 66% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    } */
+}
+
+
+.first-line {
+    margin-left: 0%;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-right: 5px solid; */
+    width: 0%;
+    display: inline-flexbox;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 5s steps(70) forwards,
+        cursor2 .4s step-end infinite alternate;
+    color : #bbd1ea;
+    font-size: medium;
+    text-align: left;
+ }
+
+
+ .second-line {
+    margin-left: 0%;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-right: 5px solid; */
+    width: 0%;
+    display: inline-flexbox;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 5s steps(70) forwards,
+        cursor .4s step-end infinite alternate;
+    animation-delay: 5s;
+    color : #bbd1ea;
+    font-size: medium;
+    text-align: left;
+ }
+
+ .third-line {
+    margin-left: 0%;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-right: 5px solid; */
+    width: 0%;
+    display: inline-flexbox;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 5s steps(70) forwards,
+        cursor .4s step-end infinite alternate;
+    animation-delay: 12s;
+    color : #bbd1ea;
+    font-size: medium;
+    text-align: left;
+ }
