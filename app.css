@@ -78,15 +78,11 @@ h2 {
 
 p {
     text-align: center;
-    /* margin-right: 10%;
-    margin-left: 10%; */
     color : #bbd1ea;
     font-size: large;
 }
 
 .image-cropper {
-    /* height: 200px;
-    width: 200px; */
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -96,15 +92,9 @@ p {
 img {
     display: inline;
     margin: 0 auto;
-    /* transition: transform .2s; */
   }
 
-/* img:hover{
-    transform: scale(1.1);
-} */
-
 .standard-button {
-    /* Add your standard button styles here */
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -126,7 +116,6 @@ img {
 
 .custom-button:hover{
     transform: translateY(-10px) scale(2);
-    /* transform: image rises behind(of github logo etc); */
 }
 
 div {
@@ -162,8 +151,7 @@ div {
 }
 
 .contact-section {
-    margin-top:auto ; /* Pushes the contact section to the bottom */
-    margin-bottom: 10px;
+    margin-top: auto ; /* Pushes the contact section to the bottom */
     text-align: center;
     padding: 10px;
 }
@@ -182,157 +170,13 @@ div {
 }
 
 .small-br {
-    margin-top: 5%
+    margin-top: 2%
 }
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    padding-top: 20px;
-}
-
-/* Style for individual photo container */
-.photo-container {
-    padding: 10px;
-    text-align: center;
-}
-
-/* Style for images within the container */
-.photo-container img {
-    max-width: 100%;
-    height: auto;
-    transition: 0.2s;
-}
-
-.photo-container img:hover{
-    opacity: 0.3;
-}
-
-.photo-container .image-text {
-    position: absolute;
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    opacity: 0;
-    transition: 0.2s;
-    color: #FFFF;
-    text-align: center;
-}
-
-.photo-container:hover .image-text {
-    opacity: 1;
-}
-
-#scrollButton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 1px;
-    padding: 10px;
-    /* background-color: #007bff; */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  #scrollButton2 {
-    display: none;
-    position: fixed;
-    bottom: 120px;
-    right: 15px;
-    padding: 10px;
-    /* background-color: #007bff; */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  #scrollButton3 {
-    display: none;
-    position: fixed;
-    bottom: 210px;
-    right: 5px;
-    padding: 10px;
-    /* background-color: #007bff; */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-
-  #scrollButton4 {
-    display: none;
-    position: fixed;
-    bottom: 320px;
-    right: 5px;
-    padding: 10px;
-    /* background-color: #007bff; */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-
-  #scrollButton5 {
-    display: none;
-    position: fixed;
-    bottom: 500px;
-    right: 5px;
-    padding: 10px;
-    /* background-color: #007bff; */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  #proj-section {
-    display: flex;
-    align-items: left;    
-    margin: 20px;
-  }
-  
-  #project-info {
-    flex: 1;
-    /* padding: 20px; */
-    margin-right: 20px;
-    /* box-sizing: border-box;
-    text-align: left;
-    background-color: #00FF00; */
-  }
-  
-  #image-container-proj {
-    flex: 1;
-  }
-  
-  #current-image-proj {
-    max-width: 100%
-  }
-  
-  #projbutton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  #prev-btn-proj {
-    left: 10px;
-  }
-  
-  #next-btn-proj {
-    right: 10px;
-  }
-
 
   .anim {
     display: inline-block;
     text-align: left;
     margin: auto;
-    /* margin-left: 50%;
-    margin-right: 50%; */
   }
 
 
@@ -344,10 +188,6 @@ div {
     50% {border-color: transparent}
  }
 
- /* @keyframes typing{
-    from {width: 0}
- } */
-
  @keyframes typing {
     0% {
         width: 0;
@@ -355,12 +195,6 @@ div {
     100% {
         width: 100%;
     }
-    /* 66% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-    } */
 }
 
 

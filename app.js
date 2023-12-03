@@ -1,5 +1,17 @@
-function alertButton() {
-    alert("hello world!");
+function ProjectPage() {
+  window.location.href = 'project.html';
+}
+
+function CVPage() {
+  window.location.href = 'CV.html';
+}
+
+function PhotoPage() {
+  window.location.href = 'photo.html';
+}
+
+function PublicationPage() {
+  window.location.href = 'publication.html';
 }
 
 function scrollToSection(sectionId) {
