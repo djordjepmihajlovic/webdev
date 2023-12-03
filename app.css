@@ -20,7 +20,10 @@ body{
 /* Media Query for screens smaller than 600px (typical phones) */
 @media only screen and (max-width: 600px) {
     .content {
-        display: none; /* Hide the main content on small screens */
+        display: none; 
+    }
+    .anim {
+        display: none;
     }
 
     body::before {
