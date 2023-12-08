@@ -1,0 +1,64 @@
+html, body {
+    background-color: #020e1d;
+    height: 653px;
+    width: 462px;
+    border: 1px solid wheat;
+    padding: 3px;
+}
+
+html {
+    margin: auto;
+}
+
+body {
+    vertical-align: middle;
+}
+
+h1 {
+    text-align: center;
+    color : #bbd1ea;
+    font-family:monospace
+}
+
+h3 {
+    text-align: left;
+    color : #bbd1ea;
+    font-family:monospace;
+}
+
+p {
+    text-align: left;
+    color: #bbd1ea;
+    font-family: monospace;
+
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: greenyellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }

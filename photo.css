@@ -1,0 +1,21 @@
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 50px; /* Adjust the padding as needed */
+    background-image: url('photography/Lions\ Nat\ Park.JPG'); /* Replace with your image path */
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  /* Style the text within the banner */
+  .banner h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .banner p {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }

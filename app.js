@@ -121,10 +121,32 @@ function showPrevProject() {
 
 // Initial project and image
 showProject(currentProjectIndex);
-
 // Event listeners
 nextButton.addEventListener("click", showNextImage);
 prevButton.addEventListener("click", showPrevImage);
 nextButton.addEventListener("click", showNextProject);
 prevButton.addEventListener("click", showPrevProject);
 
+print("world")
+
+// object -- background sim 1 antiparticle particle annihilation?
+
+function Particle (x, y, color, radius){
+  this.x = x;
+  this.y = y;
+  this.radius = radius;
+  this.color = color;
+
+  this.update = () => {
+    this.draw();
+  };
+
+  this.draw = () => {
+    c.beginPath();
+    c.arc(this.x, this.y, this.radius, 0, Math.PI*2, false);
+    c.fillStyle = this.color;
+    c.fill();
+    c.closePath();
+  };
+
+}
