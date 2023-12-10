@@ -150,3 +150,22 @@ function Particle (x, y, color, radius){
   };
 
 }
+
+function showPersonal() {
+  document.getElementById("projectsFigure").style.display = "none";
+  document.getElementById("pdfFigure").style.display = "none";
+  document.getElementById("personalFigure").style.display = "none";
+  document.getElementById("professionalFigure").style.display = "block";
+  document.getElementById("photoFigure").style.display = "block";
+  document.getElementById("blogFigure").style.display = "block";
+}
+
+function showProfessional() {
+  document.getElementById("projectsFigure").style.display = "block";
+  document.getElementById("pdfFigure").style.display = "block";
+  document.getElementById("personalFigure").style.display = "block";
+  document.getElementById("professionalFigure").style.display = "none";
+  document.getElementById("photoFigure").style.display = "none";
+  document.getElementById("blogFigure").style.display = "none";
+}
+

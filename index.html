@@ -28,49 +28,60 @@
 
     <p class="small-br"></p>
 
+    <figure id="personalFigure">
+        <button onclick="showPersonal()" class="standard-button" id="personalButton">
+        <img src="img/peronal.svg" alt="pc icon" height="20px"/>
+        <figcaption class = "personallink">PERSONAL</figcaption>
+        </button>
+    </figure>    
+
+    <figure id="professionalFigure" style="display: none;">
+        <button onclick="showProfessional()" class="standard-button" id="professionalButton">
+        <img src="img/professional.svg" alt="pc icon" height="20px"/>
+        <figcaption class = "personallink">PROFESSIONAL</figcaption>
+        </button>
+    </figure>    
+
     <div class="image-container">
 
-        <figure>
+        <figure id="projectsFigure">
             <button onclick="ProjectPage()" class="standard-button" id="projectsButton">
-            <img src="img/nicepc.png" alt="pc icon" height="100px"/>
+            <img src="img/nicepc.png" alt="pc icon" height="20px"/>
             <figcaption>PROJECTS</figcaption>
             </button>
         </figure>
 
-        <figure>
+        <figure id="pdfFigure">
             <button onclick="CVPage()" class="standard-button" id="pdfButton">
-            <img src="img/file.png" alt="file icon" height="100px"/>
+            <img src="img/file.png" alt="file icon" height="20px"/>
             <figcaption>C.V.</figcaption>
             </button>
         </figure>
 
-        <!-- <figure>
-            <button class = "standard-button">
-                <img src="img/toppng.com-free-8-bit-computer-icons-s-background-8-bit-computer-icons-851x718.png" alt="folder icon" height="100px"/>
-                <figcaption>PUBLICATIONS</figcaption>
-            </button>
-        </figure> -->
-
-        <figure>
+        <figure id="photoFigure" style="display: none;">
             <button onclick="PhotoPage()" class="standard-button" id="photoButton">
-            <img src="img/camera2 Background Removed.png" alt="camera icon" height="100px"/>
+            <img src="img/camera2 Background Removed.png" alt="camera icon" height="20px"/>
             <figcaption>PHOTOGRAPHY</figcaption>
             </button>
         </figure>
 
+        <figure id="blogFigure" style="display: none;">
+            <button onclick="BlogPage()" class="standard-button" id="photoButton">
+            <img src="img/blog.png" alt="camera icon" height="20px"/>
+            <figcaption>BLOG</figcaption>
+            </button>
+        </figure>
 
     </div>
 
-    <br>
-
-    </div>
     <p class="small-br"></p>
 
     <div class="anim">
-
-        <p class ="first-line">Hey! My name's Djordje. I'm currently a 5th year theoretical physics student at the University of Edinburgh.</p>
-        <p class="second-line">My main areas of interest are in applying mathematical and computational techniques to solve problems in physics.</p>
-        <p class="third-line">I'm Currently focused on implementing machine learning methods to learn more about physical systems.</p> 
+        <p class="description">Welcome to my home page.</p>
+        <br>
+        <p class="description">I'm currently a 5th year theoretical physics student at the University of Edinburgh.</p>
+        <p class="description">My main areas of interest are in applying mathematical and computational techniques to solve problems in physics, </p>
+        <p class="description">with a current focus implementing machine learning methods to learn more about physical systems.</p> 
     </div>
 
 

@@ -2,6 +2,7 @@
 body{
     background-color: #020e1d;
     height: 100%; 
+    /* width:100%; */
     border: 1px solid wheat;
     display: flex;
     flex-direction: column;
@@ -124,7 +125,7 @@ img {
 }
 
 .custom-button:hover{
-    transform: translateY(-10px) scale(2);
+    transform: translateY(-10px) scale(1.5);
 }
 
 div {
@@ -137,9 +138,11 @@ div {
 
 
 .image-container {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
+    background-color: #041223;
+    width: 100%;
 }
 
 .image-container img {
@@ -150,7 +153,7 @@ div {
 .image-container figure {
     text-align: center;
     margin: 0px;
-    transition: 0.2s;
+    /* transition: 0.2s; */
     color: #bbd1ea;
     font-family: monospace;
 }
@@ -182,81 +185,18 @@ div {
     margin-top: 2%
 }
 
-  .anim {
-    display: inline-block;
-    text-align: left;
-    margin: auto;
-  }
-
-
- @keyframes cursor {
-    50% {border-color: transparent}
- }
-
- @keyframes cursor2 {
-    50% {border-color: transparent}
- }
-
- @keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
+.personallink {
+    color: #bbd1ea;
 }
 
-
-.first-line {
-    margin-left: 0%;
-    letter-spacing: 2px;
-    font-family: monospace;
-    /* border-right: 5px solid; */
-    width: 0%;
-    display: inline-flexbox;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        typing 5s steps(70) forwards,
-        cursor2 .4s step-end infinite alternate;
+.description {
     color : #bbd1ea;
     font-size: medium;
     text-align: left;
- }
-
-
- .second-line {
-    margin-left: 0%;
-    letter-spacing: 2px;
-    font-family: monospace;
-    /* border-right: 5px solid; */
-    width: 0%;
     display: inline-flexbox;
     white-space: nowrap;
     overflow: hidden;
-    animation: 
-        typing 5s steps(70) forwards,
-        cursor .4s step-end infinite alternate;
-    animation-delay: 7s;
-    color : #bbd1ea;
-    font-size: medium;
-    text-align: left;
- }
-
- .third-line {
     margin-left: 0%;
     letter-spacing: 2px;
     font-family: monospace;
-    /* border-right: 5px solid; */
-    width: 0%;
-    display: inline-flexbox;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        typing 5s steps(70) forwards,
-        cursor .4s step-end infinite alternate;
-    animation-delay: 14s;
-    color : #bbd1ea;
-    font-size: medium;
-    text-align: left;
- }
+}
