@@ -180,11 +180,13 @@ h2 {
 
 
 .correct {
-    background: greenyellow;
+    filter: hue-rotate(120deg);
+    background: green;
 }
 
-.wrong {
-    background: red;  
+.wrong{
+    filter: brightness(50%);
+    /* background: red;   */
 }
 
 .proffesor {

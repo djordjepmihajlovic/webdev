@@ -110,7 +110,10 @@ function toggleDifficulty() {
 function startGame() {
     currentQuestionIndex = 0;
     score = 0;
+    updateScore();
     nextButton.innerHTML = 'Next';
+    const professorImage = document.querySelector('.proffesor img');
+    professorImage.src = 'img/prof_std.png';
     showQuestion();
 }
 
@@ -165,32 +168,35 @@ function selectAnswer(e) {
     const selectedBtn = e.target;   
     const isCorrect = selectedBtn.dataset.correct === 'true';
     if(isCorrect) {
-        // selectedBtn.classList.add('correct');
-        // const professorImage = document.querySelector('.proffesor img');
-        // professorImage.src = 'img/prof_happy.png';
+        selectedBtn.classList.add('correct');
+        const professorImage = document.querySelector('.proffesor img');
+        professorImage.src = 'img/prof_happy.png';
         const correctSound = document.querySelector('.proffesor audio');
         correctSound.src = 'audio/correct.mp3';
         correctSound.play();
         score++;
-    }
+    }else {
 
-    if(isCorrect === false) {
-        // selectedBtn.classList.add('wrong');
+        const correctImg = document.querySelector('.answerimg[data-correct="true"]');
+        correctImg.parentElement.classList.add('correct');
+
+        // allImages.forEach(img => {
+        //     if (img !== correctImg) {
+        //         img.parentElement.classList.add('wrong');
+        //     }
+        // });
+        const professorImage = document.querySelector('.proffesor img');
+        professorImage.src = 'img/prof_angry.png';
+        selectedBtn.classList.add('wrong');
         const correctSound = document.querySelector('.proffesor audio');
         correctSound.src = 'audio/incorrect.mp3';
         correctSound.volume = 0.5;
         correctSound.play();
-        // const professorImage = document.querySelector('.proffesor img');
-        // professorImage.src = 'img/prof_angry.png';
     }
-    updateScore();
 
-    Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === 'true') {
-            button.classList.add('correct');
-        }
-        button.disabled = true;
-    });
+   
+
+    updateScore();
 
     // nextButton.style.display = 'block';
     setTimeout(() => {
@@ -200,7 +206,7 @@ function selectAnswer(e) {
         }else{
             showScore();
         }
-    }, 1500); 
+    }, 2500); 
 }
 
 function handleNextButton(){
@@ -226,6 +232,14 @@ function showScore(){
     nextButton.innerHTML = "Play again?";
     nextButton.style.backgroundColor = 'green';
     nextButton.style.display = 'block';
+    if (score >= (questions.length / 2)) {
+        const professorImage = document.querySelector('.proffesor img');
+        professorImage.src = 'img/prof_end_pass.png';
+    }
+    else {
+        const professorImage = document.querySelector('.proffesor img');
+        professorImage.src = 'img/prof_end_fail.png';
+    }
 }
 
 nextButton.addEventListener("click", () => {
