@@ -74,6 +74,96 @@ const questions = [
         ]
     },
     {       
+        question: "img/knots/5_1_def1.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: true },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/5_1_def2.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: true },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/5_1_def3.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: true },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/0_1_def1.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: true },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/0_1_def2.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: true },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/0_1_def3.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: true },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/5_2_def1.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: true }
+        ]
+    },
+    {       
+        question: "img/knots/5_2_def2.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: true }
+        ]
+    },
+    {       
+        question: "img/knots/5_2_def3.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: true }
+        ]
+    },
+    {       
         question: "img/knots/3_1_def_easy.png",
         answers: [
             { image: "img/unknot_gray.png", correct: false },
