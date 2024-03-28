@@ -1,8 +1,10 @@
 
 body{
     background-color: #020e1d;
-    height: 95vh; 
-    border: 1px solid wheat;
+    /* height: 95vh;  */
+    /* width: 80vh; */
+    width: auto;
+    /* border: 1px solid wheat; */
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -16,6 +18,8 @@ body{
     background-color: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 100vh;
 }
 
 /* Media Query for screens smaller than 600px (typical phones) */
@@ -97,6 +101,7 @@ h2 {
 }
 
 p {
+    /* width: 100vh; */
     text-align: center;
     color : #bbd1ea;
     font-size: large;
@@ -134,8 +139,21 @@ img {
     cursor:pointer;
 }
 
+.custom-button-2 {
+    background-color: #070606;
+    color: #bbd1ea;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
 .custom-button:hover{
     transform: translateY(-10px) scale(1.5);
+}
+
+.custom-button-2:hover{
+    transform: translateY(-10px) scale(1.15);
 }
 
 div {
@@ -205,9 +223,50 @@ div {
     text-align: left;
     display: inline-flexbox;
     white-space: nowrap;
-    overflow: hidden;
     margin-left: 0%;
     letter-spacing: 2px;
     font-family: monospace;
 }
 
+
+.card {
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-color: #041223;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border : 2px solid white;
+    margin: 10px;
+    /* padding: 10px; */
+}
+
+.knots {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.knots img {
+    margin-right: 30px; /* Adjust the value as needed */
+}
+
+.headbanner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #041223;
+    width: 100%;
+}
+.headbanner figure {
+    text-align: center;
+    margin: 0px;
+    color: #bbd1ea;
+    font-family: monospace;
+}

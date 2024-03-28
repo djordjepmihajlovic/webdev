@@ -1,6 +1,13 @@
 function SpotaKnotGamePage() {  
     window.location.href = 'spotaKnotGame.html';
   }
+function KnotTheoryPage() {  
+    window.location.href = 'knotTheory.html';
+  }
+
+  function SpotaKnotPage() {
+    window.location.href = 'spotaKnot.html';
+  }
 
 const questions = [
     {
@@ -176,6 +183,7 @@ function selectAnswer(e) {
         // const professorImage = document.querySelector('.proffesor img');
         // professorImage.src = 'img/prof_angry.png';
     }
+    updateScore();
 
     Array.from(answerButtons.children).forEach(button => {
         if(button.dataset.correct === 'true') {
@@ -184,15 +192,15 @@ function selectAnswer(e) {
         button.disabled = true;
     });
 
-    nextButton.style.display = 'block';
-    // setTimeout(() => {
-    //     currentQuestionIndex++;
-    //     if(currentQuestionIndex < questions.length){
-    //         showQuestion();
-    //     }else{
-    //         showScore();
-    //     }
-    // }, 1500); 
+    // nextButton.style.display = 'block';
+    setTimeout(() => {
+        currentQuestionIndex++;
+        if(currentQuestionIndex < questions.length){
+            showQuestion();
+        }else{
+            showScore();
+        }
+    }, 1500); 
 }
 
 function handleNextButton(){
@@ -204,6 +212,11 @@ function handleNextButton(){
     }
 }
 
+function updateScore() {
+    const scoreElement = document.getElementById('score');
+    scoreElement.textContent = score;
+}
+
 function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
@@ -211,6 +224,7 @@ function showScore(){
     questionElement.style.fontFamily = 'Arial';
     questionElement.style.color = 'wheat';
     nextButton.innerHTML = "Play again?";
+    nextButton.style.backgroundColor = 'green';
     nextButton.style.display = 'block';
 }
 
@@ -222,6 +236,7 @@ nextButton.addEventListener("click", () => {
     }
     });   
 
+updateScore();
 startGame();
 
 

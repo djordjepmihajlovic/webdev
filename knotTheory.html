@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href= "app.css"/>
+    <link rel="icon" type="image/x-icon" href="/img/pp_8bit2.jpg" class="image-cropper">
+    <meta name = "description" content= "Djordje Mihajlovic's personal homepage">
+    <meta name ="author" content= "Djordje Mihalovic">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <script src="game.js"></script>
+</head>
+<title>Intro to Knot Theory @ DjPM.xyz</title>
+<body>
+
+    <div class = "headbanner">
+        <figure>
+            <button onclick="SpotaKnotPage()" class="standard-button">
+            <img src="img/trefoil_gray.png" alt="home icon" height="20px"/>
+            <figcaption>HOME</figcaption>
+            </button>
+        </figure>
+    </div>
+
+<section class="card">
+    <h1 class="learn">What's a knot?</h1>
+    <p> A knot is a 3D loop (like a rubber band). However, these loops can get tangled to points of no return! Below we have two different knots, can you untangle the one on the left to look like the one on the right without breaking the loop?</p>
+    <div class="knots">
+        <img src="img/unknot_gray.png" alt="unknot"/>
+        <img src="img/trefoil_gray.png" alt="trefoil knot"/>
+    </div>
+    <p> The answer is no! These two knots are different and cannot be untangled to look like each other. In fact there are plenty of knots that cannot be untangled to look like other knots. Here are a few examples.</p>
+    <div class="knots">
+        <img src="img/first5gray.png" alt="5 knots"/>
+</section>
+
+<section class="card">
+    <h1>Knots can look different</h1>
+    <p> We can alter how a knot looks by stretching, squeezing, or twisting it, as long as the loop doesn't break.</p>
+    <div class="knots">
+        <img src = "img/knot_gif.gif" alt="unknot" />
+    </div>
+    <p>Gif sourced from: <a href="https://www.cantorsparadise.com/quantum-theory-and-knots-exploring-fascinating-links-between-apparently-disparate-domains-2159e0788e6a">cantorsparadise.com</a> </p>
+
+</section>
+
+<section class="card">
+    <h1>So how can you tell two different types of knot apart, or which knot is which?</h1>
+    <p> This is where knot theory comes in! Knot theory is a branch of mathematics that studies knots.</p>
+    <p> Mathematicians have introduced many different measures for discerning between knots, these are known as <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Knot_invariant%23:~:text%3DA%2520knot%2520invariant%2520is%2520a%2520quantity%2520defined%2520on%2520the%2520set,quantity%2520defined%2520on%2520knot%2520diagrams.&ved=2ahUKEwi855CBlpeFAxVHXEEAHVJsCk8QFnoECBgQAw&usg=AOvVaw3xkqJoiHzPzJ61fZSswUzO">knot invariants</a>.</p>
+    <p> The problem is that there is no known knot invariant that can uniquely describe every knot.</p>
+    <p> See <button class="custom-button-2"> About The Project </button> for my project on investigating knot invariants using machine learning.</p>
+    <p> Or play <button onclick="SpotaKnotGamePage()" class="custom-button-2"> Spot a Knot </button> to test your knot spotting capability!</p>
+</section>
+
+</body>
+</html>

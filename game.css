@@ -2,7 +2,7 @@
 body{
     background-color: #020e1d;
     height: 95vh; 
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -155,6 +155,10 @@ h2 {
     width: 0%;
 }
 
+#score-container {
+    color: wheat;
+}
+
 .question-container img {
     width: 100px;
     height: 100px;
@@ -202,7 +206,7 @@ h2 {
 }
 
 .spin {
-    animation: spin 2s linear infinite; /* Adjust the duration and timing function as needed */
+    animation: spin 5s linear infinite; /* Adjust the duration and timing function as needed */
 }
 
 @keyframes spin {
@@ -214,4 +218,41 @@ label {
     color: rgb(235, 105, 115);
     font-family:monospace;
     font-weight: 600;
+}
+
+.difficulty {
+    color: rgb(235, 105, 115);
+    font-family:monospace;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headbanner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #041223;
+    width: 100%;
+}
+.headbanner figure {
+    text-align: center;
+    margin: 0px;
+    color: #bbd1ea;
+    font-family: monospace;
+}
+
+.custom-button {
+    background-color: #070606;
+    color: #bbd1ea;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.2s;
+    cursor:pointer;
+}
+
+.custom-button:hover{
+    transform: translateY(-10px) scale(1.15);
 }

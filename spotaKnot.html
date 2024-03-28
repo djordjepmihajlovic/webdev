@@ -8,12 +8,12 @@
     <meta name ="author" content= "Djordje Mihalovic">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 </head>
-<title>Spot a Knot @ DjPM.xyz</title>
+<title>ML Knot Theory @ DjPM.xyz</title>
 <body>
 
     <!-- <div class="content"> -->
     <div id="content">
-    <h1>Spot a Knot @ DjPM.xyz</h1>
+    <h1>Machine Learning for Knot Theory @ DjPM.xyz</h1>
 
     <br>
 
@@ -21,29 +21,32 @@
 
     <p class="small-br"></p>
 
-    <div class="anim">
-        <p class="description">Welcome to Spot a Knot!</p>
-        <p class="description">Spot a Knot is a game designed to teach the user about the difficulty in telling knots apart.</p>
-    </div>
+    <section class="card">
+        <p>Welcome to Machine Learning for Knot Theory @ DjPM.xyz</p>
+        <p>This page is designed to give insight into my MPhys project on 'Machine Learning for Knot Theory' at the University of Edinburgh.</p>
+        <p>At its core, the project aims to use machine learning to classify knots based on various knot measurements.</p>
+        <p>This must be easy... all knots look very different... right?</p>
+        <p>Well, not quite. Knots can be shown to be the same by applying the <a href="https://en.wikipedia.org/wiki/Reidemeister_move">Reidemeister moves</a>, play Spot a Knot below to try and identify which knot is which!</p>
 
-    <p class="small-br"></p>
-
-    <div class="contact-section">
-
-        <p>
-            <button onclick="SpotaKnotGamePage()" class="custom-button">Play Now!</button>
     
-            <!-- <a href="https://www.linkedin.com/in/djordjemihajlovic00" target=_self>
-                <button class="custom-button">About The Project</button>
-            </a>    
+        <div class="contact-section">
 
-            <a href="https://www.linkedin.com/in/djordjemihajlovic00" target=_self>
-                <button class="custom-button">Learn More</button>
-            </a>    
-             -->
-        </p>
+            <p>
+                <button onclick="KnotTheoryPage()" class="custom-button">An intro to Knot Theory</button>
     
-    </div>
+                <button onclick="SpotaKnotGamePage()" class="custom-button">Play Spot a Knot!</button>
+    
+                <button class="custom-button">About The Project</button> 
+    
+                <!-- <a href="https://www.linkedin.com/in/djordjemihajlovic00" target=_self>
+                    <button class="custom-button">Learn More</button>
+                </a>     -->
+                 
+            </p>
+        
+        </div>
+    </section>
+
     <script src="game.js"></script>
 
 </body>
