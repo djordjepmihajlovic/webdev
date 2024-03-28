@@ -5,8 +5,11 @@ function KnotTheoryPage() {
     window.location.href = 'knotTheory.html';
   }
 
-  function SpotaKnotPage() {
+function SpotaKnotPage() {
     window.location.href = 'spotaKnot.html';
+  }
+function AboutaKnotPage() {
+    window.location.href = 'aboutaKnot.html';
   }
 
 const questions = [
@@ -68,6 +71,56 @@ const questions = [
             { image: "img/4_1_gray.png", correct: false },
             { image: "img/5_1_gray.png", correct: false },
             { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/3_1_def_easy.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: true },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/0_1_def_easy.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: true },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/4_1_def_easy.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: true },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/5_1_def_easy.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: true },
+            { image: "img/5_2_gray.png", correct: false }
+        ]
+    },
+    {       
+        question: "img/knots/5_2_def_easy.png",
+        answers: [
+            { image: "img/unknot_gray.png", correct: false },
+            { image: "img/trefoil_gray.png", correct: false },
+            { image: "img/4_1_gray.png", correct: false },
+            { image: "img/5_1_gray.png", correct: false },
+            { image: "img/5_2_gray.png", correct: true }
         ]
     },
 
