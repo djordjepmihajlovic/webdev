@@ -10,6 +10,23 @@
 </head>
 <title>CV @ DjPM.xyz</title>
 <body>
+    <div class = "headbanner">
+        <figure>
+            <button onclick="MainPage()" class="standard-button">
+            <img src="img/pp_8bit2.jpg" alt="home icon" height="20px"/>
+            <figcaption>HOME</figcaption>
+            </button>
+        </figure>
+
+        <figure id="projectsFigure">
+            <button onclick="ProjectPage()" class="standard-button" id="projectsButton">
+            <img src="img/nicepc.png" alt="pc icon" height="20px"/>
+            <figcaption>PROJECTS</figcaption>
+            </button>
+        </figure>
+
+    </div>
+
     <p>import numpy as np</p>
     <p>def main():</p>
     <h1>np.array(CV)</h1>
@@ -24,8 +41,8 @@
     <p>CV[1][1] = Bartender at Auld Hundred bar, Edinburgh.</p>
     <break></break>
     <h3>CV[2] = Technical skills:</h3>
-    <p><b>CV[2][1] = {Languages}:</b> Python, C++, HTML/CSS, JavaScript, Swift</p>
-    <p><b>CV[2][2] = {Tools}:</b> PyTorch, Numpy, Scikit-Learn, Pandas, Git, Bash/CMD line, LaTeX, Excel</p>
+    <p><b>CV[2][1] = </b>{<b>Languages:</b> Python, C++, HTML/CSS, JavaScript, Swift}</p>
+    <p><b>CV[2][2] = </b>{<b>Tools:</b> PyTorch, Numpy, Scikit-Learn, Pandas, Git, Bash/CMD line, LaTeX, Excel}</p>
     <h3>CV[3] = Projects:</h3>
     <p>See <b>{Projects}</b></p>
     <break></break>
@@ -36,5 +53,7 @@
 
     <p>if __name__ == "__main__":</p>
     <p>main()</p>
+
+    <script src="app.js"></script>
 
 </body>

@@ -1,7 +1,7 @@
 html, body {
     background-color: #020e1d;
-    height: 653px;
-    width: 462px;
+    height: 718px;
+    width: 508px;
     border: 1px solid wheat;
     padding: 3px;
 }
@@ -62,3 +62,28 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
+
+  .headbanner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #041223;
+    width: 100%;
+}
+.headbanner figure {
+    text-align: center;
+    margin: 0px;
+    color: #bbd1ea;
+    font-family: monospace;
+}
+
+
+.standard-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #bbd1ea;
+}

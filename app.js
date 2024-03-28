@@ -6,12 +6,24 @@ function CVPage() {
   window.location.href = 'CV.html';
 }
 
+function SpotaKnotPage() {
+  window.location.href = 'spotaKnot.html';
+}
+
+function SpotaKnotGamePage() {  
+  window.location.href = 'spotaKnotGame.html';
+}
+
 function PhotoPage() {
   window.location.href = 'photo.html';
 }
 
 function PublicationPage() {
   window.location.href = 'publication.html';
+}
+
+function MainPage() {
+  window.location.href = 'index.html'
 }
 
 function scrollToSection(sectionId) {
@@ -84,40 +96,6 @@ const projectDescription = document.getElementById("project-description");
 const currentImage = document.getElementById("current-image");
 const prevButton = document.getElementById("prev-btn-proj");
 const nextButton = document.getElementById("next-btn-proj");
-
-function showProject(index) {
-  const project = projects[index];
-  projectTitle.textContent = project.title;
-  projectDescription.textContent = project.description;
-  showImage(0); // Show the first image when switching projects
-}
-
-function showImage(index) {
-  currentImage.src = projects[currentProjectIndex].images[index];
-  currentImageIndex = index;
-}
-
-function showNextImage() {
-  const project = projects[currentProjectIndex];
-  currentImageIndex = (currentImageIndex + 1) % project.images.length;
-  showImage(currentImageIndex);
-}
-
-function showPrevImage() {
-  const project = projects[currentProjectIndex];
-  currentImageIndex = (currentImageIndex - 1 + project.images.length) % project.images.length;
-  showImage(currentImageIndex);
-}
-
-function showNextProject() {
-  currentProjectIndex = (currentProjectIndex + 1) % projects.length;
-  showProject(currentProjectIndex);
-}
-
-function showPrevProject() {
-  currentProjectIndex = (currentProjectIndex - 1 + projects.length) % projects.length;
-  showProject(currentProjectIndex);
-}
 
 // Initial project and image
 showProject(currentProjectIndex);
