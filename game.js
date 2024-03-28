@@ -259,7 +259,7 @@ function selectAnswer(e) {
         }else{
             showScore();
         }
-    }, 2500); 
+    }, 2000); 
 }
 
 function handleNextButton(){
