@@ -2,7 +2,7 @@
 body{
     background-color: #020e1d;
     height: 95vh; 
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -60,6 +60,10 @@ h2 {
     text-align: center;
     color : #020e1d;
     font-family:monospace;
+}
+
+.description {
+    padding: 10px;
 }
 
 .app {
