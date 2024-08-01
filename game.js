@@ -255,8 +255,8 @@ function startGame() {
     score = 0;
     updateScore();
     nextButton.innerHTML = 'Next';
-    const professorImage = document.querySelector('.proffesor img');
-    professorImage.src = 'img/prof_std.png';
+    // const professorImage = document.querySelector('.proffesor img');
+    // professorImage.src = 'img/prof_std.png';
     showQuestion();
 }
 
@@ -312,11 +312,11 @@ function selectAnswer(e) {
     const isCorrect = selectedBtn.dataset.correct === 'true';
     if(isCorrect) {
         selectedBtn.classList.add('correct');
-        const professorImage = document.querySelector('.proffesor img');
-        professorImage.src = 'img/prof_happy.png';
-        const correctSound = document.querySelector('.proffesor audio');
-        correctSound.src = 'audio/correct.mp3';
-        correctSound.play();
+        // const professorImage = document.querySelector('.proffesor img');
+        // professorImage.src = 'img/prof_happy.png';
+        // const correctSound = document.querySelector('.proffesor audio');
+        // correctSound.src = 'audio/correct.mp3';
+        // correctSound.play();
         score++;
     }else {
 
@@ -328,13 +328,13 @@ function selectAnswer(e) {
         //         img.parentElement.classList.add('wrong');
         //     }
         // });
-        const professorImage = document.querySelector('.proffesor img');
-        professorImage.src = 'img/prof_angry.png';
+        // const professorImage = document.querySelector('.proffesor img');
+        // professorImage.src = 'img/prof_angry.png';
         selectedBtn.classList.add('wrong');
-        const correctSound = document.querySelector('.proffesor audio');
-        correctSound.src = 'audio/incorrect.mp3';
-        correctSound.volume = 0.5;
-        correctSound.play();
+        // const correctSound = document.querySelector('.proffesor audio');
+        // correctSound.src = 'audio/incorrect.mp3';
+        // correctSound.volume = 0.5;
+        // correctSound.play();
     }
 
    

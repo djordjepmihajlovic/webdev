@@ -2,7 +2,7 @@
 body{
     background-color: #020e1d;
     height: 95vh; 
-    /* border: 1px solid wheat; */
+    border: 1px solid wheat;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -10,16 +10,12 @@ body{
 }
 
 .content {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
     background-color: #f5f5f5;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Media Query for screens smaller than 600px (typical phones) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 
     body::before {
         content: "Site under development for mobile. Please visit on desktop!";
@@ -50,7 +46,7 @@ body{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     
-}
+} */
 
 /* #bbd1ea */
 
@@ -58,7 +54,6 @@ h1 {
     text-align: center;
     color : #020e1d;
     font-family:monospace
-    /* Arial, Helvetica, sans-serif; */
 }
 
 h2 {
@@ -68,19 +63,11 @@ h2 {
 }
 
 .app {
-    flex:1;
-    /* background: url('img/blackboard.png');
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center; */
     background: none;
     height: 70vh;
     max-width: 800px;
     width: 100%;
     margin: 100px auto;
-    padding: 50px;
-    border-radius: 10px;
-    /* border : 2px solid white; */
 }
 
 .app h1 {
@@ -90,6 +77,7 @@ h2 {
     font-weight: 600;
     border-bottom: 2px solid #020e1d;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .app p {
@@ -100,16 +88,10 @@ h2 {
 }
 
 .quiz {
-    /* display: flex; */
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border : 2px solid white;
 }
 
 .quiz h2 {
@@ -123,7 +105,6 @@ h2 {
     background-color: transparent;
     background-repeat: no-repeat;
     display: inline-block;
-    /* margin: 20px auto; */
     border: none;
     cursor: pointer;
     overflow: hidden;
@@ -131,22 +112,25 @@ h2 {
     color: #bbd1ea;
 }
 
+.answerimg {
+    width: 7.5vw;
+}
+
 .answerbtn:hover:not([disabled]) {
     transform: translateY(-10px) scale(1.1);
 }
 
 .answers {
-    /* display: flex; */
-    height: 100%;   
+    /* display: flex; */ 
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     text-align: center;
 }
 
 .question-container {
     /* display:flex; */
-    width: 100%;
+    width: 10vw;
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -160,10 +144,9 @@ h2 {
 }
 
 .question-container img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    width: 1vw;
+    /* border-radius: 10px;
+    margin-bottom: 20px; */
 }
 
 #next {
@@ -208,13 +191,14 @@ h2 {
 }
 
 .spin {
-    animation: spin 5s linear infinite; /* Adjust the duration and timing function as needed */
+    animation: spin 5s alternate-reverse infinite; /* Adjust the duration and timing function as needed */
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from { transform: rotate(0deg) scale(100%); }
+    to { transform: rotate(360deg) scale(50%); }
 }
+
 
 label {
     color: rgb(235, 105, 115);
